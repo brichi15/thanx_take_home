@@ -30,6 +30,11 @@ fastlane ios build
 fastlane android build
 ```
 
+### android travis_build
+```
+fastlane android travis_build
+```
+
 
 ----
 

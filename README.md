@@ -30,6 +30,8 @@ DEPENDENCIES:
 BUILDING LOCALLY WITH FASTLANE:
 
 	in the command terminal run "fastlane android build"
+	or 
+	for bundle execution run "bundle exec fastlane android build"
 
 	successfull build should give a summary like this:
 	+------+----------------------------+-------------+
