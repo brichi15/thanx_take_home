@@ -26,6 +26,7 @@ before_install:
   - bundle install
   - yes | sdkmanager "platforms;android-29" # You need to automatically accept the terms and conditions of the Android SDK for the specified version
 install:
+  - yarn
   - npm install
   - gem install fastlane
-script: fastlane android build 
+script: fastlane android travis_build
