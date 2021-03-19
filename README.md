@@ -18,6 +18,9 @@ DEPENDENCIES:
 	Ensure environment variables and paths are configured for each depenency above 
 	(ie: JAVA_HOME, ANDROID_HOME etc)
 
+	in android sdk (%ANDROID_HOME%\tools\bin)
+	run "sdkmanager --licenses" and agree to all the licenses
+
 	PACKAGES:
 		in the command terminal...
 		run "npm install" to ensure all the correct packages are loaded onto the system 
@@ -45,7 +48,9 @@ BUILDING LOCALLY WITH FASTLANE:
 	[20:52:36]: fastlane.tools finished successfully 🎉
 
 
-TRAVIS CI:
-https://travis-ci.org/github/brichi15/thanx_take_home/requests
+TRAVISCI:
+https://travis-ci.org/github/brichi15/thanx_take_home
+
+pushing to master branch will trigger a build in travisCI
 
 
