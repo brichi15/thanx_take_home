@@ -3,11 +3,11 @@ fastlane_version '2.175.0'
 
 setup_travis
 
-before_all do
+#before_all do
   #ensure_git_branch
-  ensure_git_status_clean
-  git_pull
-end
+  #ensure_git_status_clean
+  #git_pull
+#end
 
 platform :ios do
     lane :build do          # this lane should be executed via Travis CI for any branch
