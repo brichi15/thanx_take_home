@@ -49,7 +49,7 @@ BUILDING LOCALLY WITH FASTLANE:
 
 
 TRAVISCI:
-https://travis-ci.org/github/brichi15/thanx_take_home
+https://travis-ci.com/github/brichi15/thanx_take_home/builds
 
 pushing to master branch will trigger a build in travisCI
 
