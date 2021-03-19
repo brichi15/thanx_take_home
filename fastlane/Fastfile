@@ -1,0 +1,27 @@
+# Fastfile (ruby)
+
+fastlane_version '2.175.0'
+
+before_all do
+  ensure_git_branch
+  ensure_git_status_clean
+  git_pull
+end
+
+platform :ios do
+    lane :build do          # this lane should be executed via Travis CI for any branch
+
+    # build the app
+    end
+end
+
+platform :android do
+    lane :build do      # this lane should be executed via Travis CI for any branch
+
+    # build the app
+    gradle(task: 'clean', project_dir: 'android/')
+    gradle(task: 'assemble', build_type: 'Debug', project_dir: 'android/')
+
+    
+    end
+end
