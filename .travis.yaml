@@ -19,4 +19,4 @@ jdk: oraclejdk8
     before_script:
       - ./internals/scripts/travis/gitconfig.sh
     install: yarn
-    script: npm run deployment:android
+    script: fastlane android build

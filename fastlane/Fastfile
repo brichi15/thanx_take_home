@@ -1,6 +1,7 @@
 # Fastfile (ruby)
-
 fastlane_version '2.175.0'
+
+setup_travis
 
 before_all do
   ensure_git_branch
@@ -23,9 +24,4 @@ platform :android do
         gradle(task: 'assemble', build_type: 'Debug', project_dir: 'android/')
     end
 
-    lane :deployment do |version: version|
-        bump_version_number(version: version)
-        sh 'npm run repositories:upload:android'
-        commit_and_push_version_bump
-    end
 end
