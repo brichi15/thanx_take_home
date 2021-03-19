@@ -1,7 +1,6 @@
 # Thanx_take_home_proj
 
-ANDROID BUILD on Windows machine:
-
+ANDROID BUILD on Windows machine: <br /><br />
 Ensure the following dependecies are already set up: 
  - node             https://nodejs.org/en/download/ 
  - ruby             https://www.ruby-lang.org/en/documentation/installation/ 
@@ -10,14 +9,14 @@ Ensure the following dependecies are already set up:
  - gradle           https://gradle.org/install/ 
  - react native     https://reactnative.dev/ <br />
                     https://github.com/expo/create-react-native-app 
- - android studio (android sdk): https://developer.android.com/studio
+ - android studio (android sdk): https://developer.android.com/studio <br /><br />
 
 Ensure environment variables and paths are configured for each depenency above 
-(ie: JAVA_HOME, ANDROID_HOME etc)
+(ie: JAVA_HOME, ANDROID_HOME etc)<br /><br />
 
 
 run "npm install" to ensure all the correct packages are loaded onto the system <br />
-run "gem install fastlane" to install dependecies for fastlane <br />
+run "gem install fastlane" to install dependecies for fastlane <br /><br />
 
 FOR BUILDING LOCALLY WITH FASTLANE:
 run "fastlane android build"
