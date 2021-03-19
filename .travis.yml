@@ -25,7 +25,7 @@ before_install:
   - gem install bundler
   - bundle install
   - yes | sdkmanager "platforms;android-29" # You need to automatically accept the terms and conditions of the Android SDK for the specified version
-  - chmod +x gradlew            #gradle permissions
+#  - chmod +x ./gradlew            #gradle permissions
   install:
   - npm install
   - gem install fastlane
