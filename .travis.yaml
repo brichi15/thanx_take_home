@@ -1,10 +1,7 @@
 # .travis.yml
 # ...
 
-env:
-  global:
-  - NODE_VERSION=stable
-
+dist: trusty
 if: branch = master AND type = push
 language: android
 jdk: oraclejdk8
