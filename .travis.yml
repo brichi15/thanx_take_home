@@ -21,12 +21,11 @@ android:
     - extra-android-m2repository
 before_install:
   - nvm install 8.5.0
-  - rvm install 2.7.2       ##update ruby version for bundle
+  - rvm install 2.7.2       ##update ruby version for bundler
   - gem install bundler
   - bundle install
   - yes | sdkmanager "platforms;android-29" # You need to automatically accept the terms and conditions of the Android SDK for the specified version
-#  - chmod +x ./gradlew            #gradle permissions
-  install:
+install:
   - npm install
   - gem install fastlane
 script: fastlane android build 
