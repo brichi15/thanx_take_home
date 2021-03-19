@@ -24,7 +24,6 @@ before_install:
   - rvm install 2.7.2          ##update ruby version for bundler
   - gem install bundler
   - bundle install
-  - chmod +x gradlew           ## gradle permission
   - yes | sdkmanager "platforms;android-29" # You need to automatically accept the terms and conditions of the Android SDK for the specified version
   install:
   - npm install
