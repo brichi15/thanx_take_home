@@ -7,7 +7,9 @@ dist: trusty
 language: android
 jdk: oraclejdk8
 rvm:
-  - 2.7.2
+  - 2.5
+  - jruby
+  - truffleruby
 android:
   components:
     # android sdk
