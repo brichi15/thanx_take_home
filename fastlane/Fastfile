@@ -4,7 +4,7 @@ fastlane_version '2.175.0'
 setup_travis
 
 before_all do
-  ensure_git_branch
+  #ensure_git_branch
   ensure_git_status_clean
   git_pull
 end
