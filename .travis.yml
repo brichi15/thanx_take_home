@@ -5,6 +5,9 @@ stage: Deploy Android
 if: branch = master AND type = push
 language: android
 jdk: oraclejdk8
+branches:
+  only:
+    - master
 android:
   components:
     # android sdk
