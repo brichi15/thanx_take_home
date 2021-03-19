@@ -19,5 +19,8 @@ Ensure environment variables and paths are configured for each depenency above
 run "npm install" to ensure all the correct packages are loaded onto the system <br />
 run "gem install fastlane" to install dependecies for fastlane <br />
 
+FOR BUILDING LOCALLY WITH FASTLANE:
+run "fastlane android build"
+
 
 
