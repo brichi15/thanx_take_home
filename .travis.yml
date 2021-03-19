@@ -6,7 +6,6 @@ os: linux
 dist: trusty
 language: android
 jdk: oraclejdk8
-sudo: required
 android:
   components:
     # android sdk
