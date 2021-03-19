@@ -16,7 +16,4 @@ jdk: oraclejdk8
       - gem install bundler
       - bundle install
       - yes | sdkmanager "platforms;android-29" # You need to automatically accept the terms and conditions of the Android SDK for the specified version
-    before_script:
-      - ./internals/scripts/travis/gitconfig.sh
-    install: yarn
     script: fastlane android build
