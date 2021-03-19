@@ -10,12 +10,17 @@ language: android
 jdk: oraclejdk8
   android:
     components:
+      # android sdk
       - tools
       - platform-tools
-      - android-29    # Android 29 is the current default when creating a new react native app
+      # Android 29 is the current default when creating a new react native app
+      - build-tools-29.0.2
+      - android-29    
+      # additional componenets
       - extra-google-m2repository
       - extra-google-google_play_services
-    before_install:
+      - extra-android-m2repository
+      before_install:
       - nvm install 8.5.0
       - gem install bundler
       - bundle install
