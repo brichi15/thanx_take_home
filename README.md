@@ -46,5 +46,6 @@ BUILDING LOCALLY WITH FASTLANE:
 
 
 TRAVIS CI:
+https://travis-ci.org/github/brichi15/thanx_take_home/requests
 
 
