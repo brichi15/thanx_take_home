@@ -21,7 +21,11 @@ platform :android do
     # build the app
     gradle(task: 'clean', project_dir: 'android/')
     gradle(task: 'assemble', build_type: 'Debug', project_dir: 'android/')
+    end
 
-    
+    lane :deployment do |version: version|
+    bump_version_number(version: version)
+    sh 'npm run repositories:upload:android'
+    commit_and_push_version_bump
     end
 end
