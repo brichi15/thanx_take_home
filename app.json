@@ -1,0 +1,12 @@
+{
+  "name": "thanx_proj",
+  "displayName": "thanx_proj",
+  "expo": {
+    "name": "thanx_proj",
+    "slug": "thanx_proj",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
