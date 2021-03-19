@@ -1,8 +1,6 @@
 # Fastfile (ruby)
 fastlane_version '2.175.0'
 
-setup_travis
-
 platform :ios do
     lane :build do          # this lane should be executed via Travis CI for any branch
 
@@ -22,7 +20,8 @@ platform :android do
     end
 
     lane :travis_build do      # this lane should be executed via Travis CI for any branch
-
+        setup_travis
+        
         # build the app
         gradle(task: 'clean', project_dir: 'android/')
         gradle(task: 'assemble', build_type: 'Debug', project_dir: 'android/')
