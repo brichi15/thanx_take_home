@@ -1,6 +1,10 @@
 # .travis.yml
 # ...
-stage: Deploy Android
+
+env:
+  global:
+  - NODE_VERSION=stable
+
 if: branch = master AND type = push
 language: android
 jdk: oraclejdk8
@@ -16,4 +20,7 @@ jdk: oraclejdk8
       - gem install bundler
       - bundle install
       - yes | sdkmanager "platforms;android-29" # You need to automatically accept the terms and conditions of the Android SDK for the specified version
-    script: fastlane android build
+    install:
+    - npm install
+    - gem install fastlane
+    script: fastlane android build 
